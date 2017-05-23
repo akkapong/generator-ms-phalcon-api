@@ -1,0 +1,24 @@
+version: '2'
+services:
+  
+  <%= dockerName %>_api:
+    build: web/
+    tty: true
+    ports:
+      - "80<%= postfixPort %>:80"
+    volumes:
+      - ../:/var/www/html
+    links:
+      - <%= dockerName %>_mongo:mongo
+    environment:
+      ENVIRONMENT: docker
+    container_name: <%= dockerName %>_api
+
+  <%= dockerName %>_mongo:
+    build: mongo/
+    ports:
+      - "270<%= postfixPort %>:27017"
+    container_name: <%= dockerName %>_mongo
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "generator-ms-phalcon-api",
+  "version": "0.1.5",
+  "description": "Microservice Phalcom api Template",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "gulp": "*",
+    "gulp-shell": "*",
+    "nodegit": "*",
+    "npm-git-install": "*",
+    "open": "*",
+    "yeoman-generator": "*"
+  },
+  "files": [
+    "app"
+  ],
+  "main": "app/index.js",
+  "author": "Akkapong Kajornwongwattana",
+  "license": "EGG"
+}
