@@ -19,5 +19,12 @@ $settings = [
         'libraryDir'     => __DIR__ . '/../../app/library/',
         'baseUri'        => '<%= baseUrl %>',
     ],
+
+    'cache' => [
+        'configs' => [
+            'cacheDir' => '../app/cache/',
+        ],
+        'lifeTime' => 1800,
+    ],
     
 ];
